@@ -1,4 +1,4 @@
-# 📊 Analiza przeżycia – Heart Transplant Study (część nieparametryczna)
+# 📊 Analiza przeżycia – Heart Transplant Study
 
 ## 🧠 Temat projektu
 **Wpływ przeszczepu serca na przeżycie pacjentów zakwalifikowanych do programu transplantacyjnego.**
@@ -8,12 +8,12 @@ Projekt oparty na danych ze Stanford Heart Transplant Study, obejmujących 103 p
 ---
 
 ## 🎯 Cel projektu
-Celem całego projektu jest analiza czynników wpływających na długość życia pacjentów oczekujących na przeszczep serca. Analiza obejmuje:
+Celem całego projektu jest analiza czynników wpływających na długość życia pacjentów oczekujących na przeszczep serca. Analiza do tej pory obejmuje:
 - wpływ przeszczepienia serca (`transplant_bin`),
 - wcześniejsze interwencje medyczne (`prior_bin`),
 - wiek pacjenta (`age`).
 
-W projekcie zastosowano metody nieparametryczne (Kaplan-Meier, testy log-rank), parametryczne (Weibull, log-normalny) oraz półparametryczne (model Coxa).
+W projekcie do tej pory zastosowano metody nieparametryczne (Kaplan-Meier, testy log-rank).
 
 ---
 
@@ -43,7 +43,14 @@ Zakres mojej odpowiedzialności w projekcie:
 
 - **Przeszczepienie serca istotnie wydłuża czas przeżycia** – mediana wzrasta z 21 do 207 dni.
 - `prior_bin` (wcześniejsza interwencja) występuje tylko w grupie przeszczepionej → wymaga ostrożnej interpretacji.
-- Wiek pacjenta ma umiarkowany wpływ na przeżycie (p ~0.03).
-- Najwyższy hazard zgonu występuje w pierwszych tygodniach od kwalifikacji.
+- Wiek pacjenta ma istotny wpływ na przeżycie (p ~0.03).
+- Najwyższy hazard zgonu występuje w pierwszych tygodniach od kwalifikacji (jednak ilość obserwacji nie jest wielka i występują okresy gdzie hazard = 0, przez co tradycyjne tablice trwania życia nie są idealne).
 
 ---
+## Miłej pracy :-)
+---
+## 📬 Kontakt
+
+Autor części nieparametrycznej: **Michał Jamroży**  
+📧 [mj113984@student.sgh.waw.pl]  
+💼 Student Analiza Danych - Big Data, SGH  
